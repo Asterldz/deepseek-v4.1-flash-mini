@@ -1,0 +1,48 @@
+{
+  "name": "v41-mini-500m-code-tools-pretrain-2b",
+  "target_tokens": 2000000000,
+  "validation_fraction": 0.005,
+  "tokenizer_vocab_size": 32768,
+  "sources": {
+    "python": {
+      "target_tokens": 1000000000,
+      "dataset": "codeparrot/codeparrot-clean",
+      "revision": "35a59fb",
+      "license": "per-record; permissive allow-list",
+      "files": [
+        "file-000000000001.json.gz",
+        "file-000000000002.json.gz",
+        "file-000000000003.json.gz",
+        "file-000000000004.json.gz",
+        "file-000000000005.json.gz",
+        "file-000000000006.json.gz",
+        "file-000000000007.json.gz",
+        "file-000000000008.json.gz"
+      ]
+    },
+    "zh": {
+      "target_tokens": 800000000,
+      "dataset": "openbmb/Ultra-FineWeb",
+      "revision": "a2b9b58",
+      "license": "Apache-2.0 dataset card; verify upstream content terms",
+      "files": [
+        "ultrafineweb-zh-part-001-of-256.parquet",
+        "ultrafineweb-zh-part-002-of-256.parquet"
+      ]
+    },
+    "technical": {
+      "target_tokens": 200000000,
+      "dataset": "HuggingFaceFW/fineweb-edu",
+      "revision": "v1.0.0",
+      "license": "ODC-By-1.0",
+      "files": [
+        "000_00000.parquet",
+        "001_00000.parquet",
+        "002_00000.parquet",
+        "003_00000.parquet",
+        "004_00000.parquet",
+        "005_00000.parquet"
+      ]
+    }
+  }
+}

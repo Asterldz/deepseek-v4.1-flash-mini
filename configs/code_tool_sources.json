@@ -1,0 +1,32 @@
+{
+  "purpose": "Pinned public SFT candidates; not an approved pretraining corpus",
+  "sources": [
+    {
+      "name": "magicoder",
+      "repo": "ise-uiuc/Magicoder-OSS-Instruct-75K",
+      "revision": "5f839b1f368a76b161028bb9edff055db34022b2",
+      "file": "data-oss_instruct-decontaminated.jsonl",
+      "license_label": "mit",
+      "expected_bytes": 203201169,
+      "expected_sha256": "f988f14d3516a9f958eeea310f63903727c6d3463bc9cb435288b6ca4bb09cf9"
+    },
+    {
+      "name": "hermes",
+      "repo": "NousResearch/hermes-function-calling-v1",
+      "revision": "dae3e1d28cfbcf4b915c04ea1e072030529b4bda",
+      "file": "func-calling.json",
+      "license_label": "apache-2.0",
+      "expected_bytes": 20554130,
+      "expected_sha256": "769478035a886678d525d057ea66e3fd1e247f43e35c8d6d7cc866e080b6742b"
+    },
+    {
+      "name": "code_feedback",
+      "repo": "m-a-p/Code-Feedback",
+      "revision": "f411b16a97c910ac9acf8b0d0948e340aa77cc34",
+      "file": "Code-Feedback.jsonl",
+      "license_label": "apache-2.0",
+      "expected_bytes": 413476947,
+      "expected_sha256": "0b57541fd0a0408cf6c128f727d41cd9d406c7dadcf7544fa6c7955df3b38ce9"
+    }
+  ]
+}

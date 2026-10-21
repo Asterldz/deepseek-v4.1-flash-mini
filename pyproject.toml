@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "v41-text-mini"
+version = "0.1.0"
+description = "Small-scale PyTorch implementation inspired by the DeepSeek-V4.1-Flash text architecture"
+readme = "README.md"
+license = {file = "LICENSE"}
+requires-python = ">=3.11"
+dependencies = ["torch>=2.6,<2.15", "numpy>=1.26", "tokenizers>=0.21"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+data = ["pyarrow>=18,<22", "huggingface-hub>=1.0,<2"]
+
+[tool.setuptools.packages.find]
+include = ["v41_mini*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
